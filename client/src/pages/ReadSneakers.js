@@ -12,7 +12,7 @@ const ReadSneakers = (props) => {
     }, [props]);
     
     return (
-        <div className="ReadTrips">
+        <div className="ReadSneakers">
             {
                 posts && posts.length > 0 ?
                 posts.map((post,index) => 

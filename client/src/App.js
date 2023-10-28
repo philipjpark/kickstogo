@@ -1,10 +1,9 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import { useRoutes } from 'react-router-dom'
-import ReadSneakers from './pages/ReadSneakers'
 import { Link } from 'react-router-dom'
-
-
+import ReadSneakers from './pages/ReadSneakers'
+import SneakerDetails from './pages/SneakerDetails'
 
 
 const App = () => {
@@ -26,6 +25,10 @@ const App = () => {
     {
       path: "/",
       element:<ReadSneakers data={sneakers}/>
+    },
+    {
+      path: "/sneaker/get/:id",
+      element:<SneakerDetails data={sneakers}/>
     }
   ]);
 
@@ -47,3 +50,4 @@ const App = () => {
 }
 
 export default App;
+

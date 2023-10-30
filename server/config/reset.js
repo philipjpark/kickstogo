@@ -29,6 +29,27 @@ const createSneakersTable = async () => {
     }
   }
 
+  const createCommentsTable = async () => {
+    const createCommentsTableQuery = `
+      CREATE TABLE IF NOT EXISTS comments (
+        id serial PRIMARY KEY,
+        sneaker_id integer NOT NULL,
+        comment varchar(100) NOT NULL,
+        num_votes integer DEFAULT 0,
+        FOREIGN KEY(sneaker_id) REFERENCES sneakers(id)
+      );
+    `
+  
+    try {
+      const res = await pool.query(createCommentsTableQuery)
+      console.log('🎉 comments table created successfully')
+    }
+    catch (err) {
+      console.error('⚠️ error creating comments table', err)
+    }
+  }
+  
+
 const seedSneakersTable = async () => {
     await createSneakersTable()
     
@@ -57,3 +78,5 @@ const seedSneakersTable = async () => {
     }
     
     seedSneakersTable()
+    createCommentsTable()
+    

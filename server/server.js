@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import sneakersRoutes from './routes/sneakers.js'
+import commentsRoutes from './routes/comments.js'
 
 
 
@@ -15,9 +16,12 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/sneakers', sneakersRoutes)
+app.use('/api/comments', commentsRoutes)
 
 const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
 })
+
+

@@ -4,6 +4,7 @@ import { useRoutes } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import ReadSneakers from './pages/ReadSneakers'
 import SneakerDetails from './pages/SneakerDetails'
+import CreateComment from './pages/CreateComment'
 
 
 const App = () => {
@@ -29,6 +30,10 @@ const App = () => {
     {
       path: "/sneaker/get/:id",
       element:<SneakerDetails data={sneakers}/>
+    },
+    {
+      path:"/comment/create/:sneaker_id",
+      element: <CreateComment />
     }
   ]);
 

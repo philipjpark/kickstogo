@@ -5,16 +5,22 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 10px;
+    margin-top: 90px;
     margin-bottom: 15px;
     width:560px;
-    height: 480px;
+    height: 550px;
     background-size: cover;
     text-align: center;
     display: flex;
-    background-color: rgba(171, 166, 159, 0.507);
+    background-color: rgba(220, 218, 216, 0.507);
     background-blend-mode: multiply;
-    color: white;
+    color: rgb(86, 82, 82);
     backdrop-filter: blur(10px);
+    overflow: hidden;
+    /* Limit text to 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit the number of displayed lines */
+    -webkit-box-orient: vertical;
 }
 
 .SneakersCard-info {
@@ -30,7 +36,12 @@
     padding-right: 30px;
     margin-bottom: 20px;
     font-size: 15px;
+    color: rgb(0, 0, 0);
     height: 145px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .seeMoreBtn {

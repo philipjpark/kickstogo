@@ -8,7 +8,7 @@ const SneakersCard = (props) =>  {
   return (
       <div className="SneakersCard" style={{ backgroundImage:`url(${props.img_url})`}} >
         <div className="SneakersCard-info">
-          <h2 className="brand_name">{props.brand_name}</h2>
+          <h3 className="brand_name">{props.brand_name}</h3>
           <p className="description">{props.description}</p>
           {/* <p className="sizes">{props.sizes}</p>
           <p className="price">{props.prices + " days"}</p> */}

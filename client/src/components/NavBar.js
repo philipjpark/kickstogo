@@ -13,7 +13,7 @@ function NavBar(){
             <div className="logo">Kicks To Go</div>
 
             <nav className="topnav">
-                <Link to="/home">🏠 Home </Link>
+                <Link to="/about">🔍 About</Link>
                 <Link to="/">👟 Sneakers</Link>
                 <Link to="/order">🗒️ Order </Link>
             </nav>

@@ -5,6 +5,7 @@ import { useRoutes } from 'react-router-dom'
 import ReadSneakers from './pages/ReadSneakers'
 import SneakerDetails from './pages/SneakerDetails'
 import CreateComment from './pages/CreateComment'
+import About from './pages/About'
 
 
 const App = () => {
@@ -34,6 +35,10 @@ const App = () => {
     {
       path:"/comment/create/:sneaker_id",
       element: <CreateComment />
+    },
+    {
+      path:"/about",
+      element: <About />
     }
   ]);
 

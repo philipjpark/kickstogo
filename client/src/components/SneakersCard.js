@@ -14,7 +14,7 @@ const SneakersCard = (props) =>  {
         
         <div className="container">
           <p className="price">{props.price}</p>
-          <Link to={'sneaker/get/'+ props.id}><button className="orderBtn">Order</button></Link>
+          <Link to={'sneaker/get/'+ props.id}><button className="detailsBtn">Details</button></Link>
         </div>
 
         </div>

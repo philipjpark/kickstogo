@@ -28,31 +28,36 @@ const SneakerDetails = ({data}) => {
 
     return (
         <div className="out">
+        <div className="details-banner">
+        <h3 className="brand_name">{post.brand_name}</h3>
+        <div className="details-container">
+            <p className="details-description">{post.description}</p>
+        </div>
+        </div>
+
             <div className="flex-container">
-
-                <div className="left-side">
-                    <h3>{post.brand_name}</h3>
-                    <p>{"🗒️ Description: " + post.description}</p>
-                    <p>{"✔️ Sizes: " + post.sizes }</p>
-                    <p>{"🏷️ Price: " + post.price}</p>
+                <div className="left-side" style={{ backgroundImage:`url(${post.img_url})`}}>
                 </div>
-
-                <div className="right-side" style={{ backgroundImage:`url(${post.img_url})`}}>
+                <div className="right-side">
+                    {/* <p>{"✔️ Sizes: " + post.sizes }</p> */}
+                    <p className="details-price">{"🏷️ Price: " + post.price}</p>
+                    <p className="right-side-brand_name">{post.brand_name}</p>
+                    <Link to={'../../comment/create/'+ id }><button className="addCommentBtn">Create Comment</button></Link>
                 </div>
             </div>
 
             <div className="flex-container">
-                <div className="activities">
-                {
-                comments && comments.length > 0 ?
-                comments.map((comment,index) => 
-                    <CommentBtn id={comment.id} comments={comment.comment} num_votes={comment.num_votes}/>
-                ) : ''
-                }
-                    <br/>
-                    <Link to={'../../comment/create/'+ id }><button className="addCommentBtn">+ Add Comment</button></Link>
+                <div className="comments-container">
+                    <p className="heart-me"> ❤️ Heart me!</p>
+                    <div className="comments">
+                    {
+                    comments && comments.length > 0 ?
+                    comments.map((comment,index) => 
+                        <CommentBtn id={comment.id}  num_votes={comment.num_votes} comments={comment.comment}/>
+                    ) : ''
+                    }
                 </div>
-
+                </div>
             </div>
             
         </div>

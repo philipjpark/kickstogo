@@ -35,17 +35,16 @@ const CreateComment = () => {
 
     return (
         <div>
-            <center><h3>Add Comment</h3></center>
             <form>
-                <label>Comment</label> <br />
+                <label>💬 Leave a Comment </label> <br />
                 <input type="text" id="comment" name="comment" value={comment.comment} onChange={handleChange}/><br />
                 <br/>
 
-                <label>Comment ID</label><br />
+                {/* <label>Comment ID</label><br />
                 <input type="number" id="sneaker_id" name="sneaker_id" value={sneaker_id} readOnly/><br />
-                <br/>
+                <br/> */}
 
-                <input type="submit" value="Submit" onClick={createComment} />
+                <input type="submit" value="Submit" className="submit-button" onClick={createComment} />
             </form>
         </div>
     )

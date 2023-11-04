@@ -20,7 +20,7 @@ const CommentBtn = (props) =>  {
 
   return (
     <button className='commentBtn' id={props.id} onClick={updateCount}>
-      {props.comments} <br/> {'△ ' + num_votes + ' Upvotes' }
+       {num_votes  +  ' ❤️ ' } <br/ > <br/ >  {props.comments} 
     </button>
   )
 

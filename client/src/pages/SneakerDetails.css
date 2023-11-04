@@ -1,13 +1,46 @@
+.out {
+  margin-top: 90px;
+}
+
+.brand_name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #486284;
+}
+
+.details-banner {
+  text-align: center;
+}
+
+.details-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100px;
+  width: 65%;
+  margin: 0 auto;
+  /* border: 1px solid #ccc; */
+  padding: 20px; 
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.details-description {
+  margin-top: 20px;
+  color: #1A202C;
+  font-size: 15px;
+  font-weight: 500;
+}
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    
-
+    height: 500px;
+    margin-top: 50px;
   }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     width: 50%;
     margin: 10px;
     text-align: center;
@@ -15,35 +48,25 @@
     font-size: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    color: #1A202C;
   }
-
 
   .flex-container p {
     font-size: 20px;
     line-height: 30px;
-    text-align: justify;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
   }
 
-  .right-side {
+  .addCommentBtn {
+    margin-top: 40px;
+    background-color: #AAB5C3;
+  }
+  .flex-container .heart-me {
+    text-align: center;
+  }
+  .left-side {
     background-size: cover;
-  }
-
-  .addActivityBtn{
-    color: rgb(255, 255, 255);
-    background-color: rgba(38, 163, 217, 0.491);
-  }
-
-  .addActivityBtn:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgba(29, 122, 162, 0.491);
-  }
-
-  .addDestinationBtn{
-    color: rgb(255, 255, 255);
-    background-color: rgba(38, 163, 217, 0.491);
-  }
-
-  .addDestinationBtn:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgba(29, 122, 162, 0.491);
+    background-position: center; 
   }

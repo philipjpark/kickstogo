@@ -42,12 +42,12 @@ const App = () => {
 
     <div className="App">
 
-      <div className="header">
-{/* 
+      {/* <div className="header">
         <h1>👟 Kicks To Go</h1>
         <Link to="/"><button className="headerBtn">Sneakers</button></Link>
-        <Link to="/order"><button className="headerBtn">Order</button></Link> */}
-      </div>
+        <Link to="/order"><button className="headerBtn">Order</button></Link>
+      </div> */}
+
         {element}
     </div>
 

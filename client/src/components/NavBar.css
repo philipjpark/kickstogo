@@ -3,33 +3,31 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px 50px;
   display: flex;
   background: transparent;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 100; 
+
 }
 
 .logo {
-  font-size: 23px;
-  color: #2a8fc1;
+  font-size: 25px;
+  color: #1A202C;
   text-decoration: none;
   font-weight: 700;
 }
+
 .topnav a {
   position: relative;
   font-size: 18px;
-  color: gray;
-  font-weight: 500;
+  color: #1A202C;
+  font-weight: 600;
   text-decoration: none;
   margin-left: 40px;
   margin: 40px;
 }
-
-/* .topnav-right a:hover {
-  text-decoration: underline;
-}  */
  
 .topnav a::before {
   content: "";
@@ -38,11 +36,10 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: gray;
-  transition: .4s;
+  background: #1A202C;
+  transition: .2s;
 }
 
 .topnav a:hover::before {
   width: 100%;
-
 }

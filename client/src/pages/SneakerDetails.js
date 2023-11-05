@@ -34,7 +34,7 @@ const SneakerDetails = ({data}) => {
             <p className="details-description">{post.description}</p>
         </div>
         </div>
-
+        
             <div className="flex-container">
                 <div className="left-side" style={{ backgroundImage:`url(${post.img_url})`}}>
                 </div>

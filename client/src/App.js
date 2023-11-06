@@ -6,6 +6,7 @@ import ReadSneakers from './pages/ReadSneakers'
 import SneakerDetails from './pages/SneakerDetails'
 import CreateComment from './pages/CreateComment'
 import About from './pages/About'
+import PageNotFound from './pages/PageNotFound'
 
 
 const App = () => {
@@ -39,7 +40,12 @@ const App = () => {
     {
       path:"/about",
       element: <About />
+    },
+    {
+      path:"/*",
+      element: <PageNotFound />
     }
+
   ]);
 
   

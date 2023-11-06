@@ -10,14 +10,16 @@ const About = () =>  {
     <div className="About">
     <div className="flex-container">
       <div className="left-side">
-        {/* <p>We are beyond e-commerce: we are a labor of love.</p> */}
-        <h2>👋 Welcome to Kicks To Go!</h2>
-        <p>Kicks To Go is  where sneaker culture and innovation come together. 
+        {/* <p>We are beyond e-commerce: we are a labor of love.</p><br /> */}
+        <h2>👋 Welcome to <br /> Kicks To Go!</h2>
+        {/* <h2>👋 Welcome!</h2> */}
+
+        <p className="About-paragraph">Kicks To Go is  where sneaker culture and innovation come together. 
           We're not just an online store:  <br />
           we're your gateway to exclusive collaborations, curated collections, and a thriving sneaker community.</p>
       </div>
-      <div className="right-side">
-        <img src={ sneaker } alt="sneaker"/> 
+      <div className="right-side" style={{ backgroundImage: `url(${sneaker})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+        {/* <img src={ sneaker } alt="sneaker"/>  */}
       </div>
     </div>
   </div>
